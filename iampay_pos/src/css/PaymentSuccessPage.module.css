@@ -1,0 +1,17 @@
+.imgBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.checkSign {
+  width: 180px;
+}
+
+.successText {
+  font-size: 33px;
+  font-weight: 500;
+  margin-top: 45px;
+  text-align: center;
+  line-height: 53px;
+}

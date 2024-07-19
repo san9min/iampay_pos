@@ -1,0 +1,51 @@
+.priceInputGuide {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.priceInput {
+  margin: 45px auto 0 auto;
+  border-bottom: 1px solid black;
+  width: 380px;
+  display: flex;
+  padding-bottom: 7px;
+}
+
+.changedInput {
+  text-align: center;
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.fixedInput {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+table {
+  margin: 30px auto 25px auto;
+}
+
+td {
+  width: 155px;
+  height: 62px;
+  text-align: center;
+  font-size: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #f0f0f0;
+}
+
+td:active {
+  background-color: #ffffff;
+}
+
+.leftVector {
+  width: 32px;
+}

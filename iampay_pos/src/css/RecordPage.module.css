@@ -1,0 +1,61 @@
+.selectBox {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 35px auto;
+}
+
+.selectBox select{
+  border: 1px rgb(181, 181, 181) solid;
+  border-radius: 7px;
+  height: 35px;
+  width: 100px;
+  font-size: 18px;
+  padding-left: 8px;
+  margin-right: 30px;
+}
+
+.selectBox div {
+  font-size: 22px;
+  padding: auto 0;
+  line-height: 35px;
+}
+
+.recordBox {
+  width: 75%;
+  margin: 40px auto 35px auto;
+}
+
+.recordBox hr {
+  flex-grow: 1;
+  border: 0.1px solid #000000;
+  margin: auto 0;
+}
+
+.recordHeader {
+  display: flex;
+  margin: 11px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recordBlock {
+  width: 33%;
+  text-align: center;
+}
+
+.recordBody {
+  overflow: auto;
+  height: 300px;
+}
+
+.recordRow {
+  display: flex;
+  margin: 13px 0;
+  font-size: 20px;
+}
+
+#recordMiddleBlock {
+  margin-left: 80px;
+  margin-right: 80px;
+}
