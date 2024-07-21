@@ -17,22 +17,24 @@ function PriceInputPage(props) {
     setPrice(parseInt(price / 10));
   };
   const handleSubmit = (e) => {
-    const submitInputs = {
-      username: "",
-      price: price,
-      payment_date: "",
-      is_done: false,
-    }
-
     if (price === 0) {
       return;
+    }
+
+    const submitInputs = {
+      user_id: null,
+      user_name: null,
+      price: price.toString(),
+      payment_date: null,
+      is_done: false,
     }
 
     axios
       .post(`${hostURL}/api/payments`, submitInputs)
       .then((response) => {
+        console.log(response.data);
         // id값을 response로 받음
-        navigate("/loading", {state: {id : 3}});
+        navigate("/loading", {state: response.data});
       })
       .catch((error) => {
         console.log(error);

@@ -148,7 +148,7 @@ function RecordPage(props) {
                 <span>{payment.payment_date.substr(8,2)}</span>&nbsp;
                 <span>{payment.payment_date.substr(11,5)}</span>
               </div>
-              <div className={styles.recordBlock} id={styles.recordMiddleBlock}>{payment.username.substr(0,1)}X{payment.username.substr(2,1)}</div>
+              <div className={styles.recordBlock} id={styles.recordMiddleBlock}>{payment.user_name.substr(0,1)}X{payment.user_name.substr(2,1)}</div>
               <div className={styles.recordBlock}>{payment.price.toLocaleString()}원</div>
             </div>
           ))}

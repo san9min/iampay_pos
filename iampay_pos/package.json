@@ -2,11 +2,13 @@
   "name": "iampay_pos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jinmidnight01.github.io/iampay_pos/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
+    "gh-pages": "^6.1.1",
     "json-server": "^0.17.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 8080  --routes routes.json"
+    "server": "json-server --watch db.json --port 8080  --routes routes.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
